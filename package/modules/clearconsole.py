@@ -8,23 +8,14 @@ try:
   import time
   import random
   import datetime
+  from sys import platform
   from colorama import Fore, Style
 except:
   print("Error: Missing required modules. Please install the following modules: rsa, datetime, time, colorama and random")
 
-try:
-  from randomhex import createDigest
-  from filterfile import filterFile
-  from clearconsole import clearConsole
-  from extractlist import extractList
-  from extracttable import extractTable
-except:
-  print("Error: Missing required program files, ensure that the following files are present: randomhex.py, clearconsole.py, filterfile.py, extractlist.py and extracttable.py")
-
 
 # Global Variables
 class Files():
-  logFile = str("C:/logs/python/Data-Extraction")
   modulePath = str("C:/Users/" + os.getlogin() + "/AppData/Local/Programs/Python/Libs")
   filterFile = str(modulePath + "/data-extraction/modules/filterfile.py")
   extractList = str(modulePath + "/data-extraction/modules/extractlist.py")
@@ -42,3 +33,13 @@ class errorMessages():
 user = str(os.getlogin())
 sleep = time.sleep(3)
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
+
+
+# Functions
+def CC():
+  if platform == "linux" or platform == "linux2":
+    os.system("clear")
+  else:
+    os.system("cls")
+    
+    

@@ -14,7 +14,7 @@ except:
 try:
   from randomhex import createDigest
   from filterfile import filterFile
-  from clearconsole import clearConsole
+  from clearconsole import CC
   from extractlist import extractList
   from extracttable import extractTable
 except:
@@ -23,8 +23,10 @@ except:
 
 # Global Variables
 class Files():
-  logFile = str("C:/logs/python/Data-Extraction")
   modulePath = str("C:/Users/" + os.getlogin() + "/AppData/Local/Programs/Python/Libs")
+  programDir = str(modulePath + "/data-extraction")
+  programDir2 = str(modulePath + "/data-extraction/modules")
+  programDir3 = str(modulePath + "/data-extraction/standalone")
   filterFile = str(modulePath + "/data-extraction/modules/filterfile.py")
   extractList = str(modulePath + "/data-extraction/modules/extractlist.py")
   extractTable = str(modulePath + "/data-extraction/modules/extracttable.py")
@@ -43,37 +45,26 @@ sleep = time.sleep(3)
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
   
   
-# Functions
 def checks():
-
+  # File checks
+  if os.path.exists(Files.programDir) is False:
+    os.makedirs(Files.programDir)
+  if os.path.exists(Files.programDir2) is False:
+    os.makedirs(Files.programDir2)
+  if os.path.exists(Files.programDir3) is False:
+    os.makedirs(Files.programDir3)
+  if os.path.exists(Files.modulePath) is False:
+    os.mkdir(Files.modulePath)
+  else:
+    pass
+  
   # Check file status
   try:
-   testLog = open(Files.logFile, "r")
    testFilter = open(Files.filterFile, "r")
    testList = open(Files.extractList, "r")
    testTable = open(Files.extractTable, "r")
    testhex = open(Files.randomHex, "r")
   except IOError:
     print(errorMessages.fileOpen)
-    raise errorMessages.fileOpen
+    raise RuntimeError
 
-  # File checks
-  if os.exists(Files.modulePath) == False:
-    os.mkdir(Files.modulePath)
-  if os.exists(Files.logFile) == False:
-    open(Files.logFile, "x")
-  if os.exists(Files.filterFile) == False:
-    open(Files.filterFile, "x")
-  if os.exists(Files.extractList) == False:
-    open(Files.extractList, "x")
-  if os.exists(Files.extractTable) == False:
-    open(Files.extractTable, "x")
-  if os.exists(Files.randomHex) == False:
-    open(Files.randomHex, "x")
-  else:
-    with open(Files.logFile, "a") as log:
-      log.write("All files exist and are readable - AT: " + now)
-    pass
-
-
-    
