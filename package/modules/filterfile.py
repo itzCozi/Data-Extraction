@@ -5,5 +5,5 @@ import os
 user = str(os.getlogin())
 
 # Functions
-def extractTable():
+def filterFile():
   pass
