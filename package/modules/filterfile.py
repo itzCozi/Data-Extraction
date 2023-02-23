@@ -33,13 +33,16 @@ now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
 # Functions
 def filterFile(file, blklistword):
-  with open(file, "w+") as f:
+  with open(file, "r+") as f:
     for line in f:
-      for word in line:
+      fline = line.split(' ')
+      for word in fline:
         if word is blklistword:
           newline = line.replace(word, "")
+          f.seek(word)
           f.write(newline)
         else:
           print("Word not found in file.")
-          
+
+        return fline
           

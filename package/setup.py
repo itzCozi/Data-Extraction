@@ -1,7 +1,7 @@
 # https://www.freecodecamp.org/news/build-your-first-python-package/
 from setuptools import setup, find_packages
 
-VERSION = '0.4' 
+VERSION = '0.8' 
 DESCRIPTION = 'Extract data from files in python'
 LONG_DESCRIPTION = '''
 A python package for extracting data from files, more on github.
@@ -28,7 +28,6 @@ setup(
             "Intended Audience :: Education",
             "Programming Language :: Python :: 2",
             "Programming Language :: Python :: 3",
-            "Operating System :: MacOS :: MacOS X",
             "Operating System :: Microsoft :: Windows",
         ]
 )
