@@ -5,6 +5,7 @@ The data extraction package was made for the soul purpose of me being bored. I a
 
 - Clear console
 - Filter file
+- Random number
 - Extract list
 - Extract table
 - Random hex

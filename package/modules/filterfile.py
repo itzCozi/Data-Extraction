@@ -34,15 +34,12 @@ now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
 # Functions
 def filterFile(file, blklistword):
-  with open(file, "r+") as f:
-    for line in f:
-      fline = line.split(' ')
-      for word in fline:
-        if word is blklistword:
-          newline = line.replace(word, "")
-          f.seek(word)
-          f.write(newline)
-        else:
-          pass
-
-        return fline
+  with open(file, "r+") as fin:
+    content = fin.read()
+    if content.find(blklistword) is True:
+      writeIteam = content.replace(blklistword, "")
+      fin.write(writeIteam)
+      fin.close()
+    else:
+      pass
+      
