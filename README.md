@@ -11,11 +11,11 @@ The data extraction package was made for the soul purpose of me being bored. I a
 - Random hex
 
 Simply install the package with the below command in the terminal.  
-`pip install data_extract`
+`pip install DataExtraction`
 
 Extracting a table from a file with the data extraction package.
 ```
-from data_extraction import extractTable
+from dataextraction import extractTable
 
 print(extractTable("data/test.txt"))
 ```
@@ -30,7 +30,7 @@ The following are examples of a couple of ways to use the package.
 **Example 1**
 ```
 import time
-from data_extract import CC, randomhex
+from dataextraction import CC, randomhex
 
 print(randomhex())
 time.sleep(2)
@@ -40,7 +40,7 @@ This code will result in a random hex being printed to the console and then the 
 
 **Example 2**
 ```
-from data_extract import extractlist
+from dataextraction import extractlist
 
 print(extractlist("test.txt"))
 ```
