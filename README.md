@@ -43,6 +43,8 @@ print(extractlist("test.txt"))
 ```
 This code will result in the file given to be split into a list and then printed to the console.
 
+**Get Started** [Quickstart Guide](https://github.com/itzCozi/Data-Extraction/wiki/Quickstart-Guide)  
+
 
 ## Development
 The package is still in development, and will be for not to much longer. I will be adding more features and fixing bugs as I find them. If you have any suggestions or find any bugs, please let me know by creating an issue or by contacting me..Also feel free to reach out about contributing to the project.
@@ -56,9 +58,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Extra
 
-[Package on PyPi](https://pypi.org/project/Data-Extract/)
-[Latest Release](https://github.com/itzCozi/Data-Extraction/releases)
-[Quickstart Guide](https://github.com/itzCozi/Data-Extraction/wiki/Quickstart-Guide)
+[Package on PyPi](https://pypi.org/project/Data-Extract/)  
+[Latest Release](https://github.com/itzCozi/Data-Extraction/releases)  
+[Quickstart Guide](https://github.com/itzCozi/Data-Extraction/wiki/Quickstart-Guide)  
 
 Contact Me
 ---------------------------------
