@@ -43,7 +43,7 @@ print(extractlist("test.txt"))
 ```
 This code will result in the file given to be split into a list and then printed to the console.
 
-**Get Started** [Quickstart Guide](https://github.com/itzCozi/Data-Extraction/wiki/Quickstart-Guide)  
+**Get Started** With the inclusive [Quickstart Guide](https://github.com/itzCozi/Data-Extraction/wiki/Quickstart-Guide)  
 
 
 ## Development
