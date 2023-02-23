@@ -12,11 +12,11 @@ The data extraction package was made for the soul purpose of me being bored. I a
 Simply install the package with the below command in the terminal.  
 `pip install data_extract`
 
-Extracting a list from a file with the data extraction package.
+Extracting a table from a file with the data extraction package.
 ```
-from data_extraction import extractList
+from data_extraction import extractTable
 
-print(extractList("data/test.txt"))
+print(extractTable("data/test.txt"))
 ```
 ``
 ["Connor  Camden  982137882  21341", "Madine  Opeark  9031312354  21908"]
