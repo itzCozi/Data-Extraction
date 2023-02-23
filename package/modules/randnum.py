@@ -36,8 +36,9 @@ now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 # Functions
 def randnum():
   rand = random.randint(100, 100000)
+  rand2 = random.randint(100, 1000)
   foo_rand = int(rand) * int (rand)
-  moo_rand = int(foo_rand) // int(rand)
-  bar_rand = int(moo_rand) - int(rand)
+  moo_rand = int(foo_rand) - int(rand2)
+  bar_rand = int(moo_rand) + int(rand)
   
   return bar_rand
