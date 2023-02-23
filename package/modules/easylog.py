@@ -1,0 +1,1 @@
+# This is a module for easy logging in python this will also be implemented in standalone
