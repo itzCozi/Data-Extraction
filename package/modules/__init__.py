@@ -4,4 +4,5 @@ from .extractlist import extractList
 from .extracttable import extractTable
 from .initialize import checks
 from .clearconsole import CC
+from .randnum import randnum
 
