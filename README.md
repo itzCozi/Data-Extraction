@@ -43,7 +43,29 @@ print(extractlist("test.txt"))
 ```
 This code will result in the file given to be split into a list and then printed to the console.
 
+### Quickstart & Standalone
+
 **Get Started** With the inclusive [Quickstart Guide](https://github.com/itzCozi/Data-Extraction/wiki/Quickstart-Guide)  
+
+Quick start ways.
+
+``
+from standalone import createDigest
+
+print(createDigest())
+``
+
+``
+from standalone import extractList
+
+PATH = "data/"
+
+for iteam in path:
+  with open(iteam, "r") as file:
+    print(extractList(file))
+``
+
+Notice the standalone file is not in a folder like the modules from the package instead it floats freely around the lib directory this alows for easy access to the functions.
 
 
 ## Development
