@@ -31,6 +31,7 @@ user = str(os.getlogin())
 sleep = time.sleep(3)
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
+
 # Functions
 def extractTable(file):
   returnIteam = []

@@ -31,6 +31,7 @@ user = str(os.getlogin())
 sleep = time.sleep(3)
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
+
 # Functions
 def filterFile(file, blklistword):
   with open(file, "r+") as f:
@@ -42,7 +43,6 @@ def filterFile(file, blklistword):
           f.seek(word)
           f.write(newline)
         else:
-          print("Word not found in file.")
+          pass
 
         return fline
-          
