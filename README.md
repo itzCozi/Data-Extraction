@@ -43,7 +43,6 @@ print(extractlist("test.txt"))
 ```
 This code will result in the file given to be split into a list and then printed to the console.
 
-------------------------------------
 
 ## Quickstart & Standalone  
 
