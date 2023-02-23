@@ -44,10 +44,6 @@ print(extractlist("test.txt"))
 This code will result in the file given to be split into a list and then printed to the console.
 
 
-### Installation & Usage
-Both installation and usage is detailed in the [wiki](https://github.com/itzCozi/Data-Extraction/wiki).
-
-
 ## Development
 The package is still in development, and will be for not to much longer. I will be adding more features and fixing bugs as I find them. If you have any suggestions or find any bugs, please let me know by creating an issue or by contacting me..Also feel free to reach out about contributing to the project.
 
