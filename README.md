@@ -45,7 +45,7 @@ This code will result in the file given to be split into a list and then printed
 
 ------------------------------------
 
-### Quickstart & Standalone  
+## Quickstart & Standalone  
 
 Below are quicker and more conveinet ways to use the functions there are two ways listed.
 
