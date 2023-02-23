@@ -52,6 +52,16 @@ def extractList(file):
   return splitData
 
 
+def randnum():
+  rand = random.randint(100, 100000)
+  rand2 = random.randint(100, 1000)
+  foo_rand = int(rand) * int (rand)
+  moo_rand = int(foo_rand) - int(rand2)
+  bar_rand = int(moo_rand) + int(rand)
+  
+  return bar_rand
+
+
 def extractTable(file):
   returnIteam = []
   with open(file, "r") as f:
