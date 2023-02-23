@@ -9,6 +9,8 @@ The data extraction package was made for the soul purpose of me being bored. I a
 - Extract table
 - Random hex
 
+Simply install the package with the below command in the terminal.  
+`pip install data_extract`
 
 Extracting a list from a file with the data extraction package.
 ```
