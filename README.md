@@ -27,6 +27,17 @@ print(extractTable("data/test.txt"))
 ``
 
 
+## Standalone
+This is a new version of the package the idea is this file contains every function in the package but you can call to it way easier the file is located in a absolute path meaning you can call to it with `from standalone import function` and then call the function. This is a great way to use the package if you have issues importing from the directory. I ran into problems importing files with multipule functions from a directory so I made standalone to fix that when you want to use a function that is usally in a file with other functions you can just import the function as so `from standalone import module` heres an example `from standalone import hash as hashFunctions` this will enable the user to use the hash functions from the hash module.  
+
+**Template:**  `from <file> import <function/class> as <alias>`  
+```
+from standalone import *
+
+standalone.createDigest()
+```
+
+
 ## Examples
 The following are examples of a couple of ways to use the package.
 
