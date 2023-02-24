@@ -1,5 +1,6 @@
 # https://www.freecodecamp.org/news/build-your-first-python-package/
 from setuptools import setup, find_packages
+import sys, os
 
 VERSION = '1.5' 
 DESCRIPTION = 'Extract data from files in python'
@@ -9,9 +10,11 @@ A python package for extracting data from files, more on github.
           https://github.com/itzCozi/Data-Extraction
 '''
 
+# Initialisation
+sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages")
+
 # Setting up
 setup(
-       # the name must match the folder name 'verysimplemodule'
         name="Data Extract", 
         version=VERSION,
         author="Cooper ransom",
