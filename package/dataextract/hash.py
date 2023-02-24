@@ -90,7 +90,6 @@ def secure(key):
   for z in range(olprime):
     random.shuffle(keyList)
     random.shuffle(keyList)
-    print(z)
     bar = keyList + randomkey
     for i in bar:
       random.shuffle(bar)
@@ -106,7 +105,6 @@ def secure(key):
   for x in range(olprime):
     random.shuffle(newList)
     random.shuffle(newList)
-    print(x)
     foo = randomkey + newList
     for i in foo:
       random.shuffle(foo)

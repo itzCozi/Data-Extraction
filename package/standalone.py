@@ -69,6 +69,24 @@ def randnum():
   return bar_rand
 
 
+def tick(inc, args=None):
+  tickVar = 0
+  argB = "set"
+  argC = "reset"
+  
+  if args == argB:
+    tickVar += inc
+    print(tickVar)
+  if args == argC:
+    tickVar = 0
+    print(tickVar)
+  else:
+    tickVar += inc
+    
+  return tickVar
+
+
+
 def extractTable(file):
   returnIteam = []
   with open(file, "r") as f:
@@ -84,18 +102,14 @@ def extractTable(file):
   
 
 def filterFile(file, blklistword):
-  with open(file, "r+") as f:
-    for line in f:
-      fline = line.split(' ')
-      for word in fline:
-        if word is blklistword:
-          newline = line.replace(word, "")
-          f.seek(word)
-          f.write(newline)
-        else:
-          print("Word not found in file.")
-
-        return fline
+  with open(file, "r+") as fin:
+    content = fin.read()
+    if content.find(blklistword) is True:
+      writeIteam = content.replace(blklistword, "")
+      fin.write(writeIteam)
+      fin.close()
+    else:
+      pass
       
       
 def createDigest():
