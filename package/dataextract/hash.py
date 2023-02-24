@@ -9,6 +9,7 @@ except ImportError:
   print("Error: Missing module(s) please install the following module(s): random, time, hashlib, string")
 
 
+# Global variables
 class errorMessages():
   error = str("ERROR: An unknown error has occured.")
   fileUnreadable = str("ERROR: The file given cannot be read.")
