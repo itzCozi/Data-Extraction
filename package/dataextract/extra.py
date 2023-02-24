@@ -41,7 +41,7 @@ def bruteforce(target, print=None):
 
   endTime = time.time()
   elapsedtime = endTime - initTime
-  
+
   if print != None:
     print(''.join(targetList))
     print("Bruteforce took:", elapsedtime, "seconds")
@@ -49,3 +49,29 @@ def bruteforce(target, print=None):
     return elapsedtime
   
 
+def generate(length, type=None):
+  if type == str("binary"):
+    returniteam = []
+    for i in range(length):
+      temp = str(random.randint(0, 1))
+      returniteam.append(temp)
+      
+  if type == str("password"):
+    returniteam = []
+    dataset = string.ascii_letters + string.digits
+    for i in range(length):
+      returniteam.append(random.choice(dataset))
+      
+  if type == str("address"):
+    returniteam = []
+    dataset = string.ascii_letters + string.digits + string.punctuation
+    for i in range(length):
+      returniteam.append(random.choice(dataset))
+      
+  if type == str("number"):
+    returniteam = []
+    dataset = string.digits + string.digits
+    for i in range(length):
+      returniteam.append(random.choice(dataset))
+
+  return ''.join(returniteam)
