@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-VERSION = '1.6' 
+VERSION = '1.7' 
 DESCRIPTION = 'Extract data from files in python'
 LONG_DESCRIPTION = '''
 A python package for extracting data from files, more on github.
@@ -10,8 +10,7 @@ A python package for extracting data from files, more on github.
           https://github.com/itzCozi/Data-Extraction
 '''
 
-# Initialisation
-sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages")
+sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages/dataextract")
 
 # Setting up
 setup(
@@ -22,7 +21,7 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
-        install_requires=[], 
+        install_requires=[sys], 
         
         keywords=['python', 'data', 'extraction', 'list'],
         classifiers= [
@@ -32,4 +31,5 @@ setup(
             "Programming Language :: Python :: 3",
             "Operating System :: Microsoft :: Windows",
         ]
+
 )

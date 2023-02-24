@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages")
+sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages/dataextract")
 
 from .randomhex import createDigest
 from .filterfile import filterFile

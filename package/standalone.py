@@ -64,7 +64,7 @@ now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
 
 # Initialisation
-sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages")
+sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages/dataextract")
 
 
 # Functions
