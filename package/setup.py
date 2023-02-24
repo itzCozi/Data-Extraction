@@ -31,5 +31,4 @@ setup(
             "Programming Language :: Python :: 3",
             "Operating System :: Microsoft :: Windows",
         ]
-
 )
