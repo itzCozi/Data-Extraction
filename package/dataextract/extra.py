@@ -76,3 +76,4 @@ def generate(length, type=None):
       returniteam.append(random.choice(dataset))
 
   return ''.join(returniteam)
+
