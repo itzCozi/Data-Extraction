@@ -25,7 +25,6 @@ now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
 # Functions
 def bruteforce(target):
-  # Still in development
   thread = Thread(target = bruteforce, args = ())
   staticList = []
   targetList = []
@@ -34,9 +33,6 @@ def bruteforce(target):
     staticList.append(character)
   for i in range(20, 100):
     random.shuffle(targetList)
-  
-  print("Starting brute force attack on target: " + str(targetList))
-  time.sleep(3)
   thread.start()
   
   while targetList != staticList:
@@ -45,7 +41,6 @@ def bruteforce(target):
     if targetList == target:
       thread.join()
       break
-  print(targetList)
-  input("Press enter to exit... ")
+  print(''.join(targetList))
+  os.system("pause")
   
-bruteforce()
