@@ -2,6 +2,7 @@
 try:
   import rsa
   import os
+  import sys
   import string
   import binascii
   import hashlib
@@ -34,6 +35,10 @@ user = str(os.getlogin())
 sleep = time.sleep(3)
 keyValue = random.randint(90, 300)
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
+
+
+# Initialisation
+sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages")
 
 
 # Functions
