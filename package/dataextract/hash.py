@@ -24,6 +24,7 @@ def keypair(print=None):
   buff = random.randint(400, 10000)
   length = random.randint(50, 400)
   tiny = random.uniform(0.01, 0.99)
+  x = 0
   alphabet = string.ascii_letters + string.digits
   publicBase = '.'.join(random.choice(alphabet) for i in range(buff))
   privateBase = '.'.join(random.choice(alphabet) for i in range(buff))
@@ -33,13 +34,13 @@ def keypair(print=None):
   publicList = publicBase.split('.')
   privateList = privateBase.split('.')
 
-  while i != threshold:
+  while x != threshold:
     x = privateList + publicList
     y = publicList + privateList
     for iteam in x, y:
       random.shuffle(x)
       random.shuffle(y)
-    i += 1
+    x += 1
 
   time.sleep(tiny)
   
