@@ -40,7 +40,7 @@ def keypair(print=None):
     for iteam in x, y:
       random.shuffle(x)
       random.shuffle(y)
-    x += 1
+    x =+ 1
 
   time.sleep(tiny)
   
