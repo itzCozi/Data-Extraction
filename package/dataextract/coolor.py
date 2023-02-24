@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
+
 # Imports
 import os
 import sys

@@ -1,4 +1,6 @@
-# This is a module for easy logging in python this will also be implemented in standalone
+import sys, os
+sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
+
 try:
   import datetime
   import time

@@ -1,4 +1,5 @@
-# Check user os and run command to clear screen based on os.
+import sys, os
+sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
 
 # Imports
 try:

@@ -1,5 +1,7 @@
+import sys, os
+sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
+
 import string
-import os
 
 def tick(inc, args=None):
   tickVar = 0

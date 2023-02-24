@@ -1,10 +1,11 @@
-# This is a module for hashing in python this will also be implemented in standalone
+import sys, os
+sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
+
 try:
   import random
   import time
   import hashlib
   import string
-  import os
 except ImportError:
   print("Error: Missing module(s) please install the following module(s): random, time, hashlib, string")
 

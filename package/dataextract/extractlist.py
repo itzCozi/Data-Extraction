@@ -1,7 +1,9 @@
+import sys, os
+sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
+
 # Imports
 try:
   import rsa
-  import os
   import binascii
   import time
   import random
