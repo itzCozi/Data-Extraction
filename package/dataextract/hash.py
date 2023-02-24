@@ -21,10 +21,10 @@ class errorMessages():
 
 def keypair(print=None):
   threshold = random.randint(2, 8)
-  buff = random.randint(200, 1000)
+  buff = random.randint(10, 10000)
   length = random.randint(50, 400)
-  tiny = random.uniform(0.01, 0.99)
-  x = 0
+  iterable = 0
+  tiny = random.uniform(0.001, 0.999)
   alphabet = string.ascii_letters + string.digits
   publicBase = '.'.join(random.choice(alphabet) for i in range(buff))
   privateBase = '.'.join(random.choice(alphabet) for i in range(buff))
@@ -34,18 +34,18 @@ def keypair(print=None):
   publicList = publicBase.split('.')
   privateList = privateBase.split('.')
 
-  while x != threshold:
+  while iterable != threshold:
     x = privateList + publicList
     y = publicList + privateList
     for iteam in x, y:
       random.shuffle(x)
       random.shuffle(y)
-    x =+ 1
+    iterable += 1
 
   time.sleep(tiny)
   
-  publicKey = ''.join(random.choice(x) for i in range(length))
-  privateKey = ''.join(random.choice(y) for i in range(length))
+  publicKey = ''.join(random.choice(x) for iterable in range(length))
+  privateKey = ''.join(random.choice(y) for iterable in range(length))
 
   if print is print:
     print(publicKey)
@@ -53,6 +53,7 @@ def keypair(print=None):
     print(privateKey)
   else:
     return publicKey, privateKey
+
 
 
 def hashfile(file):
