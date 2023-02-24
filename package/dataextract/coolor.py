@@ -51,19 +51,19 @@ class text():
     os.system("Color " + str(colorCodes.white))
   def Grey():
     os.system("Color " + str(colorCodes.grey))
-  def Light_blue():
+  def Lightblue():
     os.system("Color " + str(colorCodes.light_blue))
-  def Light_green():
+  def Lightgreen():
     os.system("Color " + str(colorCodes.light_green))
-  def Light_aqua():
+  def Lightaqua():
     os.system("Color " + str(colorCodes.light_aqua))
-  def Light_red():
+  def Lightred():
     os.system("Color " + str(colorCodes.light_red))
-  def Light_purple():
+  def Lightpurple():
     os.system("Color " + str(colorCodes.light_purple))
-  def Light_yellow():
+  def Lightyellow():
     os.system("Color " + str(colorCodes.light_yellow))
-  def Light_white():
+  def Brightwhite():
     os.system("Color " + str(colorCodes.light_white))
   
   def Reset():
@@ -94,19 +94,19 @@ class background():
     os.system("Color " + str(colorCodes.white + colorCodes.black))
   def Grey():
     os.system("Color " + str(colorCodes.grey + colorCodes.black))
-  def Light_blue():
+  def Lightblue():
     os.system("Color " + str(colorCodes.light_blue + colorCodes.white))
-  def Light_green():
+  def Lightgreen():
     os.system("Color " + str(colorCodes.light_green + colorCodes.white))
-  def Light_aqua():
+  def Lightaqua():
     os.system("Color " + str(colorCodes.light_aqua + colorCodes.white))
-  def Light_red():
+  def Lightred():
     os.system("Color " + str(colorCodes.light_red + colorCodes.white))
-  def Light_purple():
+  def Lightpurple():
     os.system("Color " + str(colorCodes.light_purple + colorCodes.white))
-  def Light_yellow():
+  def Lightyellow():
     os.system("Color " + str(colorCodes.light_yellow + colorCodes.white))
-  def Light_white():
+  def Brightwhite():
     os.system("Color " + str(colorCodes.light_white + colorCodes.white))
   
   def Reset():
