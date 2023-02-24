@@ -21,7 +21,7 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
-        install_requires=[sys], 
+        install_requires=['sys', 'os'], 
         
         keywords=['python', 'data', 'extraction', 'list'],
         classifiers= [
