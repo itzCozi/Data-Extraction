@@ -55,6 +55,21 @@ def keypair(print=None):
     return publicKey, privateKey
 
 
+def hash(target, print=None):
+  sha256 = hashlib.sha256()
+  xO = random.randint(10, 200)
+  targetConvert = list(target)
+  for i in range(xO):
+    random.shuffle(targetConvert)
+
+  targetShuffled = ''.join(targetConvert)
+  sha256.update(targetShuffled.encode())
+
+  if print != None: 
+    print(sha256.hexdigest())
+  else:
+    return sha256.hexdigest()
+
 
 def hashfile(file):
   BUF_SIZE = os.path.getsize(file)
