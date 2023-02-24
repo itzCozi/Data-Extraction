@@ -8,6 +8,7 @@ The data extraction package was made for the soul purpose of me being bored. I a
 - Brute forcer
 - Filter file
 - Random number
+- Hash function
 - Time functions
 - Random keypair
 - Easy log functions
