@@ -5,6 +5,7 @@ try:
   import os
   import time
   import hashlib
+  import string
   from threading import Thread
   from colorama import Fore, Style
 except ImportError:
