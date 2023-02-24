@@ -21,7 +21,7 @@ class errorMessages():
 
 def keypair(print=None):
   threshold = random.randint(2, 8)
-  buff = random.randint(400, 10000)
+  buff = random.randint(200, 1000)
   length = random.randint(50, 400)
   tiny = random.uniform(0.01, 0.99)
   x = 0
