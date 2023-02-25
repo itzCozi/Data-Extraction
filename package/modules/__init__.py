@@ -1,15 +1,15 @@
 import sys, os
 sys.path.append("C:/Users/" + os.getlogin() + "/scoop/apps/python/current/Lib/site-packages/dataextract")
 
-from .randomhex import createDigest
-from .filterfile import filterFile
-from .extractlist import extractList
-from .weblib import webinstall, analysepage
-from .extracttable import extractTable
-from .clearconsole import CC
-from .extra import bruteforce, generate
-from .randnum import randnum
-from .hash import keypair, hashfile, comparehash, secure
-from .Ptime import nowtime, currentdate, currenttime
-from .easylog import eventlog, errorlog
-from .tick import tick
+from .randomhex import *
+from .filterfile import *
+from .extractlist import *
+from .weblib import *
+from .extracttable import *
+from .clearconsole import *
+from .extra import *
+from .randnum import *
+from .hash import *
+from .Ptime import *
+from .easylog import *
+from .tick import *
