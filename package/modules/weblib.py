@@ -1,13 +1,9 @@
 import sys, os
 sys.path.append("c:/users/" + os.getlogin() + "/scoop/apps/python/current/lib/site-packages/dataextract")
 
-try:
-  import os
-  from coolor import text, background, style
-  import requests
-except ImportError:
-  print("Error: Missing module(s) please install the following module(s): colorama, datetime and os.")
-  
+import os
+import requests
+
 
 # Global variables
 class errorMessages():
@@ -26,21 +22,12 @@ def webinstall(URL, Destination, NewName, FileExt):
     
 
 def analysepage(URL):
-  page = requests.get(URL)
-  status = page.status_code
-  headers = page.headers
-  content = page.text
-  encoding = page.encoding
-  
-  text.Blue()
+  status = requests.get(URL).status_code
+  headers = requests.get(URL).headers
+  content = requests.get(URL).text
+  encoding = requests.get(URL).encoding
   print("Status code: " + str(status))
-  text.Purple()
   print("Headers: " + str(headers))
-  text.Green()
   print("Content: " + str(content))
-  text.Red()
   print("Encoding: " + str(encoding))
-  style.ResetAll()
   
-  
-analysepage("https://itzcozi.github.io/SafeGuard/") 
