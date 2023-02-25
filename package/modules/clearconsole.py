@@ -10,7 +10,6 @@ try:
   import random
   import datetime
   from sys import platform
-  from colorama import Fore, Style
 except:
   print("Error: Missing required modules. Please install the following modules: rsa, datetime, time, colorama and random")
 

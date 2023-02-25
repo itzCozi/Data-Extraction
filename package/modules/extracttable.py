@@ -8,10 +8,9 @@ try:
   import time
   import random
   import datetime
-  from colorama import Fore, Style
 except:
   print("Error: Missing required modules. Please install the following modules: rsa, datetime, time, colorama and random")
-
+  
 
 # Global Variables
 class Files():
@@ -35,13 +34,15 @@ now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
 
 
 # Functions
-def extractList(file):
+def extractTable(file):
+  returnIteam = []
   with open(file, "r") as f:
-    data = f.read()
-    splitData = data.split('\n')
-    f.close()
-  
-  print(splitData)
-  return splitData
+    for line in f:
+      data = f.read()
+      extractedList = data.split('  ')
+      extractData = ' '.join(extractedList)
+      reformedData = str(extractData).split('\n')
+      returnIteam.append(reformedData)
 
-  
+    print(returnIteam)
+    return returnIteam

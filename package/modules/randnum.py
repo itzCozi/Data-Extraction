@@ -8,7 +8,6 @@ try:
   import time
   import random
   import datetime
-  from colorama import Fore, Style
 except:
   print("Error: Missing required modules. Please install the following modules: rsa, datetime, time, colorama and random")
   os.system("pip install -r requirements.txt")

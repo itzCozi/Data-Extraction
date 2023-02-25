@@ -8,7 +8,6 @@ try:
   import time
   import random
   import datetime
-  from colorama import Fore, Style
 except:
   print("Error: Missing required modules. Please install the following modules: rsa, datetime, time, colorama and random")
 
@@ -20,7 +19,7 @@ class Files():
   extractList = str(modulePath + "/data-extraction/modules/extractlist.py")
   extractTable = str(modulePath + "/data-extraction/modules/extracttable.py")
   randomHex = str(modulePath + "/data-extraction/modules/randomhex.py")
-
+  
 class errorMessages():
   error = str("ERROR: An unknown error has occured.")
   fileUnreadable = str("ERROR: The file given cannot be read.")
@@ -32,16 +31,16 @@ class errorMessages():
 user = str(os.getlogin())
 sleep = time.sleep(3)
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "\n\n"
-keyValue = random.randint(90, 300)
 
 
 # Functions
-def createDigest():
-  publicKey, privateKey = rsa.newkeys(keyValue)
-  encMessage = rsa.encrypt(str(random.randint(1,10)).encode(), publicKey)
-  hexMessage = binascii.hexlify(encMessage)
-  bar = str(hexMessage).replace("'", '')
-  foo = str(bar).replace('b', '')
-
-  return foo
-
+def filterFile(file, blklistword):
+  with open(file, "r+") as fin:
+    content = fin.read()
+    if content.find(blklistword) is True:
+      writeIteam = content.replace(blklistword, "")
+      fin.write(writeIteam)
+      fin.close()
+    else:
+      pass
+      

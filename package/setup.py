@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-VERSION = '1.7' 
+VERSION = '1.9' 
 DESCRIPTION = 'Extract data from files in python'
 LONG_DESCRIPTION = '''
 A python package for extracting data from files, more on github.

@@ -7,8 +7,6 @@ try:
   import time
   import hashlib
   import string
-  from threading import Thread
-  from colorama import Fore, Style
 except ImportError:
   print("Error: Missing module(s) please install the following module(s): colorama, datetime and hashlib.")
 
